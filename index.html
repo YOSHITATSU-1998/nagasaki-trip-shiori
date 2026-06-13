@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO and Meta Tags -->
+    <title>🚗 長崎・雲仙・天草 2泊3日 温泉＆爆食ドライブ旅</title>
+    <meta name="description" content="長崎・雲仙・天草を巡る2泊3日の温泉＆爆食ドライブ旅のしおり。タイムスケジュール、予算計算、持ち物リストを完備！" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Hero Header -->
+      <header class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('./hero.png');">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="hero-badge"><i data-lucide="car"></i> 2泊3日のドライブ旅</span>
+            <span class="hero-badge beta-badge"><i data-lucide="flask-conical"></i> Beta v1.0</span>
+          </div>
+          <h1>長崎・雲仙・天草<br><span class="highlight">温泉＆爆食ドライブ</span></h1>
+          <p class="hero-date"><i data-lucide="calendar"></i> 2026年9月23日(水・祝) 〜 9月25日(金)</p>
+        </div>
+      </header>
+
+      <!-- Main Navigation Tabs -->
+      <nav class="main-nav">
+        <button class="nav-tab active" data-tab="schedule"><i data-lucide="map-pin"></i> しおり</button>
+        <button class="nav-tab" data-tab="budget"><i data-lucide="wallet"></i> 予算・電卓</button>
+        <button class="nav-tab" data-tab="checklist"><i data-lucide="check-square"></i> 持ち物</button>
+      </nav>
+
+      <!-- Main Container -->
+      <main class="content-container">
+        
+        <!-- ================= TAB: SCHEDULE ================= -->
+        <section id="tab-schedule" class="tab-content active">
+          <!-- Day Tabs Selector -->
+          <div class="day-selector">
+            <button class="day-tab active" data-day="day1">
+              <span class="day-num">Day 1</span>
+              <span class="day-date">9/23 (水・祝)</span>
+            </button>
+            <button class="day-tab" data-day="day2">
+              <span class="day-num">Day 2</span>
+              <span class="day-date">9/24 (木)</span>
+            </button>
+            <button class="day-tab" data-day="day3">
+              <span class="day-num">Day 3</span>
+              <span class="day-date">9/25 (金)</span>
+            </button>
+          </div>
+
+          <!-- Day 1 Content -->
+          <div id="schedule-day1" class="day-content active">
+            <div class="day-header-summary">
+              <h3>🟢 1日目：長崎市内・王道観光</h3>
+              <p>長崎の歴史と文化を凝縮して巡るアクティブな初日！</p>
+            </div>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time">08:00</div>
+                <div class="timeline-content">
+                  <h4>福岡出発 <span class="badge transport"><i data-lucide="navigation"></i> ドライブ</span></h4>
+                  <p>天神北IC ＞ 大宰府IC ＞ 長崎多良見IC を通って快適な旅の始まり！</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">10:30</div>
+                <div class="timeline-content">
+                  <h4>長崎市内到着 <span class="badge info"><i data-lucide="map"></i> 到着</span></h4>
+                  <p>いよいよ長崎上陸。路面電車の気配を感じつつ、ランチへ！</p>
+                </div>
+              </div>
+
+              <div class="timeline-item food-stop">
+                <div class="time">11:30</div>
+                <div class="timeline-content">
+                  <h4>【ランチ】群来軒（ぐんらいけん） <span class="badge food"><i data-lucide="utensils"></i> 中華</span></h4>
+                  <p>地元民も唸る名店。特製あんかけ皿うどんやちゃんぽんで長崎グルメの洗礼を受ける。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">午後</div>
+                <div class="timeline-content">
+                  <h4>長崎市内観光（予算合計: ¥3,400） <span class="badge spot"><i data-lucide="camera"></i> 観光</span></h4>
+                  <p>市内の移動は状況に応じて路面電車も活用！以下のスポットを巡ります：</p>
+                  <ul class="spot-list">
+                    <li><span>🐧 ペンギン水族館 (¥800)</span> <span>驚きの距離感でペンギンと触れ合う</span></li>
+                    <li><span>🕊️ 平和祈念資料館 (¥200)</span> <span>歴史を学ぶ</span></li>
+                    <li><span>🌹 グラバー園 (¥1,300)</span> <span>絶景の洋館めぐり</span></li>
+                    <li><span>⚓ 出島 (¥1,100)</span> <span>江戸時代のレトロな街並み</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">夕方</div>
+                <div class="timeline-content">
+                  <h4>雲仙へ移動 <span class="badge transport"><i data-lucide="car"></i> 移動</span></h4>
+                  <p>長崎市内から山と温泉の郷・雲仙へドライブ！</p>
+                </div>
+              </div>
+
+              <div class="timeline-item hotel-stop">
+                <div class="time">17:15</div>
+                <div class="timeline-content">
+                  <h4>大江戸温泉物語 雲仙東雲荘 <span class="badge hotel"><i data-lucide="home"></i> 宿</span></h4>
+                  <p>チェックイン。豪華夕食バイキング ＆ 極上温泉で1日目の疲れを完璧にリセット！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 2 Content -->
+          <div id="schedule-day2" class="day-content">
+            <div class="day-header-summary">
+              <h3>🟡 2日目：雲仙どっぷり・だらだらデー</h3>
+              <p>平日の特権を活かして、一切急がず雲仙をのんびり満喫する回復日。</p>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time">午前</div>
+                <div class="timeline-content">
+                  <h4>仁田峠 ＆ 雲仙ロープウェイ（¥1,500） <span class="badge spot"><i data-lucide="mountain"></i> 絶景</span></h4>
+                  <p>標高1,300mからの大パノラマ。9月の山頂は避暑にも最適！絶景を満喫します。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item food-stop">
+                <div class="time">12:00</div>
+                <div class="timeline-content">
+                  <h4>【ランチ】小浜温泉ドライブ <span class="badge food"><i data-lucide="utensils"></i> ランチ</span></h4>
+                  <p>小浜（おばま）温泉へちょっとドライブ！その日の気分で選択：</p>
+                  <ul class="spot-list">
+                    <li><span>🐟 海鮮食堂 入潮</span> <span>バキバキの新鮮地魚</span></li>
+                    <li><span>🍜 食楽 大盛</span> <span>絶品ちゃんぽん</span></li>
+                  </ul>
+                  <p class="helper-text">※予算：¥1,000〜¥2,000</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">午後</div>
+                <div class="timeline-content">
+                  <h4>雲仙地獄めぐり <span class="badge spot"><i data-lucide="flame"></i> 地獄</span></h4>
+                  <p>入場無料・神！地獄の熱を感じる「足蒸し」や、名物の「温泉たまご」の食べ歩きを楽しみます。</p>
+                  <div class="spot-image-container">
+                    <img src="./unzen.png" alt="雲仙温泉地獄めぐり" class="spot-image">
+                    <span class="image-caption">立ち上る温泉の煙が幻想的な雲仙地獄</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item hotel-stop">
+                <div class="time">16:00</div>
+                <div class="timeline-content">
+                  <h4>宿に戻って早めのだらだらタイム <span class="badge hotel"><i data-lucide="coffee"></i> 回復</span></h4>
+                  <p>露天風呂に入り浸り、夜は再び大江戸温泉物語の豪華夕食バイキングを満喫！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 3 Content -->
+          <div id="schedule-day3" class="day-content">
+            <div class="day-header-summary">
+              <h3>🔵 3日目：船旅・天草北上 ＆ 渋滞回避ルート</h3>
+              <p>有明海をフェリーで渡り、天草の絶景と最強の海鮮、そして締めの温泉を回収！</p>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time">08:30</div>
+                <div class="timeline-content">
+                  <h4>チェックアウト <span class="badge info"><i data-lucide="log-out"></i> 出発</span></h4>
+                  <p>お世話になった雲仙東雲荘を出発。港へ向かいます。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">09:45</div>
+                <div class="timeline-content">
+                  <h4>島鉄フェリー（口之津港 ＞ 鬼池港） <span class="badge transport"><i data-lucide="ship"></i> 船旅</span></h4>
+                  <p>車ごと船に乗り込み、30分間の旅情あふれる快適な有明海横断の船旅。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">10:15</div>
+                <div class="timeline-content">
+                  <h4>天草上陸・海沿い北上ドライブ <span class="badge transport"><i data-lucide="compass"></i> ドライブ</span></h4>
+                  <p>潮風を感じながら天草の美しい海岸線を北上します。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item food-stop">
+                <div class="time">11:15</div>
+                <div class="timeline-content">
+                  <h4>【ランチ】福伸（ふくしん） <span class="badge food"><i data-lucide="utensils-cross"></i> 海鮮</span></h4>
+                  <p>天草の海の幸の絶対王者。ちょっと早めに入って並ばず極上海鮮丼を確保！</p>
+                  <div class="spot-image-container">
+                    <img src="./seafood.png" alt="天草海鮮丼" class="spot-image">
+                    <span class="image-caption">天草の海の幸が贅沢に盛られた極上海鮮丼</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">12:30</div>
+                <div class="timeline-content">
+                  <h4>リゾラテラス天草 散策 <span class="badge spot"><i data-lucide="shopping-bag"></i> 買い物</span></h4>
+                  <p>おしゃれな海沿いリゾート。車内のつまみ用に名物「塩パン」を購入！</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">15:30</div>
+                <div class="timeline-content">
+                  <h4>三角西港を通過 <span class="badge spot"><i data-lucide="landmark"></i> 歴史</span></h4>
+                  <p>世界文化遺産。明治の港湾施設が美しく残る歴史スポットを車窓から満喫。</p>
+                </div>
+              </div>
+
+              <div class="timeline-item hotel-stop">
+                <div class="time">16:00</div>
+                <div class="timeline-content">
+                  <h4>スパ・タラソ <span class="badge hotel"><i data-lucide="droplet"></i> 温泉</span></h4>
+                  <p>高速に乗る直前の神ロケーション（入浴料: ¥600）。源泉かけ流しのツルツルお湯で最後の仕上げ！</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="time">17:15</div>
+                <div class="timeline-content">
+                  <h4>松橋ICから高速＆福岡帰還 <span class="badge info"><i data-lucide="flag"></i> ゴール</span></h4>
+                  <p>熊本の松橋ICから九州道へ。平日の夕方渋滞を見事に回避して、夜に福岡天神へ無事帰還。お疲れ様でした！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: BUDGET ================= -->
+        <section id="tab-budget" class="tab-content">
+          <div class="section-card">
+            <h3>💰 1人あたりの予算目安</h3>
+            <p class="section-desc">※ホテル2泊4食、固定交通費、主な観光施設入場料を含みます。</p>
+            
+            <table class="budget-table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>金額 (1人分)</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i data-lucide="bed"></i> ホテル代</td>
+                  <td class="price">¥20,505</td>
+                  <td>大江戸温泉物語 雲仙東雲荘（2泊4食付き）</td>
+                </tr>
+                <tr>
+                  <td><i data-lucide="navigation"></i> 交通費（固定）</td>
+                  <td class="price">¥2,542</td>
+                  <td>高速代（往復）＋ フェリー車体代（4人割り勘）</td>
+                </tr>
+                <tr>
+                  <td><i data-lucide="ship"></i> フェリー旅客</td>
+                  <td class="price">¥560</td>
+                  <td>個人ごとに港で支払う運賃</td>
+                </tr>
+                <tr>
+                  <td><i data-lucide="fuel"></i> ガソリン代</td>
+                  <td class="price">¥2,000</td>
+                  <td>全行程（約386km）低燃費計算＋バッファ多め</td>
+                </tr>
+                <tr>
+                  <td><i data-lucide="ticket"></i> 観光代（入場料等）</td>
+                  <td class="price">¥5,500</td>
+                  <td>長崎市内(¥3400)＋ロープウェイ(¥1500)＋スパ・タラソ(¥600)</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>基本合計（固定費）</strong></td>
+                  <td class="price"><strong>¥31,107</strong></td>
+                  <td>現地での食費・お土産代・お酒代を除く確定分</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="note-box">
+              <i data-lucide="info"></i>
+              <p>これに各自の現地での食事代・お酒・お土産代（目安 ¥5,000〜¥7,000）を加え、<strong>総予算は約 ¥36,000 〜 ¥40,000</strong> になります！コストパフォーマンス抜群！</p>
+            </div>
+          </div>
+
+          <!-- Interactive Calculator -->
+          <div class="section-card calculator-card">
+            <div class="card-header">
+              <h3><i data-lucide="calculator"></i> リアルタイム割り勘精算</h3>
+              <span class="badge info">4人旅用</span>
+            </div>
+            <p class="section-desc">旅行中に「誰かがまとめて払った共通の費用（駐車場、飲み物、買い出しなど）」を入力すると、4人で割り勘した最終的な精算額（1人あたりの支払額）をリアルタイムで計算します。</p>
+            
+            <div class="calc-grid">
+              <div class="calc-inputs">
+                <h4>➕ 共通の支払いを追加</h4>
+                <form id="calc-form" class="calc-form">
+                  <div class="form-group">
+                    <label for="expense-name">項目名</label>
+                    <input type="text" id="expense-name" placeholder="例: 駐車場代、夜の酒代" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="expense-amount">金額 (¥)</label>
+                    <input type="number" id="expense-amount" placeholder="金額を入力" min="0" required />
+                  </div>
+                  <button type="submit" class="btn btn-primary"><i data-lucide="plus"></i> 追加</button>
+                </form>
+
+                <div class="expenses-list-container">
+                  <h5>追加された支出一覧</h5>
+                  <ul id="expenses-list" class="expenses-list">
+                    <!-- Dynamic Items -->
+                    <li class="empty-msg">追加された共通費はありません</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <h4>📊 清算レポート</h4>
+                
+                <div class="result-row">
+                  <span>基本固定費 (1人あたり)</span>
+                  <span class="result-val">¥31,107</span>
+                </div>
+                <div class="result-row">
+                  <span>追加された共通費（合計）</span>
+                  <span id="total-extra-amount" class="result-val">¥0</span>
+                </div>
+                <div class="result-row">
+                  <span>追加共通費 (1人あたり)</span>
+                  <span id="per-person-extra-amount" class="result-val">¥0</span>
+                </div>
+                
+                <hr class="calc-divider" />
+                
+                <div class="total-result-row">
+                  <span>合計精算目安（1人）</span>
+                  <div class="total-price-box">
+                    <span id="final-amount-per-person">¥31,107</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TAB: CHECKLIST ================= -->
+        <section id="tab-checklist" class="tab-content">
+          <div class="section-card">
+            <div class="card-header">
+              <h3>🎒 持ち物チェックリスト</h3>
+              <button id="reset-checklist" class="btn btn-secondary btn-sm"><i data-lucide="rotate-ccw"></i> リセット</button>
+            </div>
+            <p class="section-desc">旅行の準備に役立つチェックリスト。チェック状態はブラウザに自動保存されます。</p>
+
+            <div class="checklist-container">
+              <div class="checklist-category">
+                <h4>⚠️ 必須・重要</h4>
+                <ul class="checklist-items" id="list-essential">
+                  <!-- JS generated -->
+                </ul>
+              </div>
+
+              <div class="checklist-category">
+                <h4>🧖 温泉・洗面用具</h4>
+                <ul class="checklist-items" id="list-onsen">
+                  <!-- JS generated -->
+                </ul>
+              </div>
+
+              <div class="checklist-category">
+                <h4>🔌 ガジェット・その他</h4>
+                <ul class="checklist-items" id="list-gadgets">
+                  <!-- JS generated -->
+                </ul>
+              </div>
+
+              <div class="checklist-add-custom">
+                <h4>➕ 持ち物を追加する</h4>
+                <form id="custom-item-form" class="custom-item-form">
+                  <input type="text" id="custom-item-name" placeholder="例: 御朱印帳、カメラの予備バッテリー" required />
+                  <button type="submit" class="btn btn-secondary"><i data-lucide="plus"></i> 追加</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <p>© 2026 長崎・雲仙・天草 ドライブ旅のしおり</p>
+        <p class="footer-sub">Have a nice trip! 🚗💨</p>
+      </footer>
+    </div>
+
+    <!-- Script Entry Point -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+

@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const perPersonExtraAmountEl = document.getElementById('per-person-extra-amount');
   const finalAmountPerPersonEl = document.getElementById('final-amount-per-person');
 
-  const BASE_FIXED_COST = 31107; // 1人あたりの基本固定費
+  const BASE_FIXED_COST = 31395; // 1人あたりの基本固定費
   const PARTY_SIZE = 4; // 旅行人数
   let extraExpenses = JSON.parse(localStorage.getItem('shiori_extra_expenses')) || [];
 
@@ -283,7 +283,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Transport fee breakdown popup
+  const transportRow = document.getElementById('transport-row');
+  if (transportRow) {
+    transportRow.addEventListener('click', () => {
+      alert(
+        "🚗 交通費（4人分の合計額）の内訳\n\n" +
+        "・行き高速代（通常）: ¥4,010\n" +
+        "・帰り高速代（通常）: ¥3,810\n" +
+        "・フェリー車体代 : ¥3,500\n" +
+        "-------------------------\n" +
+        "★ 移動交通費 合計 : ¥11,320\n\n" +
+        "（1人あたり: ¥11,320 ÷ 4 ＝ ¥2,830）"
+      );
+    });
+  }
+
   // Initial Pack List Load
   renderAllChecklists();
 });
-

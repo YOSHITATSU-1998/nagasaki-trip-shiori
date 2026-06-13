@@ -128,6 +128,18 @@
     animation: pulse-purple 2s infinite;
   }
   
+  .spot-link {
+    color: inherit;
+    text-decoration: underline rgba(255, 255, 255, 0.2);
+    text-underline-offset: 4px;
+    transition: var(--transition-smooth);
+  }
+  
+  .spot-link:hover {
+    color: var(--accent-orange);
+    text-decoration-color: var(--accent-orange);
+  }
+  
   .hero-badge i {
     width: 14px;
     height: 14px;
@@ -1072,6 +1084,14 @@
   .app-footer p {
     font-size: 0.8rem;
     color: var(--text-muted);
+  }
+
+  .app-footer .footer-dev {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-weight: 500;
+    opacity: 0.7;
   }
   
   .app-footer .footer-sub {

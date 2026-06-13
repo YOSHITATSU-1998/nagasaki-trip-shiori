@@ -445,6 +445,7 @@
     padding: 16px 20px;
     box-shadow: var(--shadow-soft);
     transition: var(--transition-smooth);
+    position: relative; /* 絶対配置の基準にするため追加 */
   }
   
   .timeline-item:hover .timeline-content {
@@ -457,14 +458,14 @@
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px;
+    padding-right: 76px; /* バッジが重ならないための右側余白 */
+    line-height: 1.4;
   }
   
   .timeline-content h4 .badge {
-    margin-left: auto;
+    position: absolute;
+    top: 16px;
+    right: 16px;
   }
   
   .timeline-content p {
